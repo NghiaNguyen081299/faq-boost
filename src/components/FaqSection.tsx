@@ -68,7 +68,7 @@ const FaqItemRow: React.FC<FaqItemRowProps> = ({ item, isOpen, onToggle, onKeyDo
           <button
             onClick={handleCopyLink}
             className="opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-200 p-1 rounded hover:bg-background/50 focus:outline-none focus:ring-1 focus:ring-faq-focus-ring"
-            aria-label={`Copy link to ${item.question}`}
+            aria-label={`Sao chép liên kết đến ${item.question}`}
             type="button"
             tabIndex={-1}
           >
@@ -220,7 +220,7 @@ const FaqSection: React.FC<FaqSectionProps> = ({
       <section 
         ref={sectionRef}
         className={`space-y-4 ${className}`}
-        aria-label="Frequently Asked Questions"
+        aria-label="Câu hỏi thường gặp"
       >
         {items.map((item, index) => (
           <FaqItemRow
